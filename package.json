@@ -5,10 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "build:css": "tailwind build styles/index.css -o"
   },
   "dependencies": {
     "autoprefixer": "^10.1.0",
+    "convertkit-react": "^1.4.2",
     "date-fns": "^2.16.1",
     "next": "10.0.3",
     "postcss": "^8.2.1",

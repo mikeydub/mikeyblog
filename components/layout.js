@@ -1,20 +1,27 @@
 import Head from 'next/head'
 import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import Nav from './nav'
 
-const name = 'MIKE WEN'
-export const siteTitle = 'Next.js Sample Website'
+const name = "WHO'S MIKE WEN?"
+export const siteTitle = 'Mike Wen'
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, page }) {
   return (
-    <div className={styles.container}>
+    <div className='max-w-xl py-1 mt-3 mb-6 mx-auto'>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
           content="Mike Wen's home on the internet."
         />
+        {/* preload Heebo font */}
+        <link
+            rel="preload"
+            href="/fonts/Heebo/Heebo-VariableFont_wght.ttf"
+            as="font"
+            crossOrigin=""
+          />
         <meta
           property="og:image"
           content={`https://og-image.now.sh/${encodeURI(
@@ -23,17 +30,22 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        {/* splitbee */}
+        <script async src="https://cdn.splitbee.io/sb.js"></script>
       </Head>
-      <header className={styles.header}>
-        {home ? (
+      <Nav></Nav>
+      <header className='flex flex-col'>
+        {page === 'home' ? (
+          (
           <>
             {/* <img
               src="/images/profile.png"
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt={name}
             /> */}
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1 className='text-6xl font-semibold tracking-tight mt-28 mb-20 hover:scale-110'>{name}</h1>
           </>
+        )
         ) : (
           <>
             <Link href="/">
@@ -45,25 +57,25 @@ export default function Layout({ children, home }) {
                 /> */}
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
+            <h2 className='text-2xl font-semibold tracking-tight mt-8 mb-20 ml-1'>
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a>{name}</a>
               </Link>
             </h2>
           </>
         )}
       </header>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>back home</a>
+      {page === 'post' && (
+        <div className='mb-4 underline text-gray-400 hover:text-black'>
+          <Link href="/blog">
+            <a>back to all posts</a>
           </Link>
         </div>
       )}
       <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
+      {page === 'post' && (
+        <div className='mt-10 underline text-gray-400 hover:text-black'>
+          <Link href="/blog">
             <a>see all posts</a>
           </Link>
         </div>

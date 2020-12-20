@@ -1,5 +1,6 @@
 import Layout from '../../components/layout'
-import { NotionRenderer } from "react-notion";
+import Date from '../../components/date'
+import { NotionRenderer } from "react-notion"
 import { getAllPosts } from '../'
 
 export async function getStaticProps({ params: { slug } }) {
@@ -20,9 +21,14 @@ export async function getStaticProps({ params: { slug } }) {
 }
 
 export default ({ post, blocks }) => (
-  <Layout>
+  <Layout page='post'>
   <div style={{ maxWidth: 768 }}>
-    <h1>{post.title}</h1>
+    <div className='mb-10'>
+      <h1 className='text-5xl font-semibold mb-4' >{post.title}</h1>
+      <p className='text-sm text-gray-400'>
+        <Date dateString={post.date} />
+      </p>
+    </div>
     <NotionRenderer blockMap={blocks} />
   </div>
   </Layout>

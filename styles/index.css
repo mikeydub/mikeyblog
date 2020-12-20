@@ -1,23 +1,29 @@
+@font-face {
+  font-family: "Heebo";
+  font-display: swap;
+  src: url("/fonts/Heebo/Heebo-VariableFont_wght.ttf")
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
 @tailwind base;
-
-/* Write your own custom base styles here */
-
-/* Start purging... */
 @tailwind components;
-/* Stop purging. */
-
-html,
-body {
-  @apply bg-gray-50 dark:bg-gray-900;
-}
-
-/* Write your own custom component styles here */
-.btn-blue {
-  @apply px-4 py-2 font-bold text-white bg-blue-500 rounded;
-}
-
-/* Start purging... */
 @tailwind utilities;
-/* Stop purging. */
 
-/* Your own custom utilities */
+h1 {
+  @apply text-gray-700;
+}
+
+h2 {
+  @apply text-gray-700;
+}
+
+h3 {
+  @apply text-gray-700;
+}
+
+h4 {
+  @apply text-gray-700;
+}
+
+/* a {
+  @apply underline text-gray-400 hover:text-black;
+} */
