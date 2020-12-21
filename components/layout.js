@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import styles from './layout.module.css'
 import Link from 'next/link'
 import Nav from './nav'
 
@@ -38,11 +37,6 @@ export default function Layout({ children, page }) {
         {page === 'home' ? (
           (
           <>
-            {/* <img
-              src="/images/profile.png"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            /> */}
             <h1 className='text-6xl font-semibold tracking-tight mt-28 mb-20 hover:scale-110'>{name}</h1>
           </>
         )
@@ -50,11 +44,6 @@ export default function Layout({ children, page }) {
           <>
             <Link href="/">
               <a>
-                {/* <img
-                  src="/images/profile.png"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                /> */}
               </a>
             </Link>
             <h2 className='text-2xl font-semibold tracking-tight mt-8 mb-20 ml-1'>

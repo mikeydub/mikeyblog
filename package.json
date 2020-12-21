@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:debug": "next build --debug",
     "start": "next start",
     "build:css": "tailwind build styles/index.css -o"
   },

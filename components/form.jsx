@@ -1,6 +1,4 @@
 import ConvertKitForm from "convertkit-react";
-import styles from './form.module.css';
-
 const FORM_ID = 1875705;
 
 const config = {
@@ -14,7 +12,7 @@ const config = {
 }
 
 const Form = () => (
-    <ConvertKitForm className={styles.ckfm} {...config} />
+    <ConvertKitForm {...config} />
 )
 
 export default Form;
