@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -166,14 +166,6 @@ const requestIdleCallback = typeof self !== 'undefined' && self.requestIdleCallb
 
 var _default = requestIdleCallback;
 exports.default = _default;
-
-/***/ }),
-
-/***/ 2:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("R1T0");
-
 
 /***/ }),
 
@@ -294,26 +286,11 @@ function assign(target, ...searchParamsList) {
 
 /***/ }),
 
-/***/ "65Hy":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ 4:
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Date; });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("F5FC");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("9BML");
-/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(date_fns__WEBPACK_IMPORTED_MODULE_1__);
+module.exports = __webpack_require__("RNiq");
 
-
-function Date({
-  dateString
-}) {
-  const date = Object(date_fns__WEBPACK_IMPORTED_MODULE_1__["parseJSON"])(dateString);
-  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("time", {
-    dateTime: dateString,
-    children: Object(date_fns__WEBPACK_IMPORTED_MODULE_1__["format"])(date, 'LLLL d, yyyy')
-  });
-}
 
 /***/ }),
 
@@ -448,10 +425,10 @@ function formatUrl(urlObj) {
 
 /***/ }),
 
-/***/ "9BML":
+/***/ "BEuM":
 /***/ (function(module, exports) {
 
-module.exports = require("date-fns");
+module.exports = require("convertkit-react");
 
 /***/ }),
 
@@ -876,89 +853,145 @@ module.exports = require("next/dist/next-server/lib/router-context.js");
 
 /***/ }),
 
-/***/ "R1T0":
+/***/ "RNiq":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getAllPosts", function() { return getAllPosts; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Blog; });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("F5FC");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("YFqc");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("xnum");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_date__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("65Hy");
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("CafY");
 
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, "getAllPosts", function() { return /* binding */ getAllPosts; });
+__webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return /* binding */ getStaticProps; });
+__webpack_require__.d(__webpack_exports__, "default", function() { return /* binding */ Home; });
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__("F5FC");
+
+// EXTERNAL MODULE: external "next/head"
+var head_ = __webpack_require__("xnum");
+var head_default = /*#__PURE__*/__webpack_require__.n(head_);
+
+// EXTERNAL MODULE: ./components/layout.js + 1 modules
+var layout = __webpack_require__("CafY");
+
+// EXTERNAL MODULE: external "convertkit-react"
+var external_convertkit_react_ = __webpack_require__("BEuM");
+var external_convertkit_react_default = /*#__PURE__*/__webpack_require__.n(external_convertkit_react_);
+
+// CONCATENATED MODULE: ./components/form.jsx
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+const FORM_ID = 1875705;
+const config = {
+  formId: FORM_ID,
+  template: 'clare',
+  hideName: true,
+  showLabels: false,
+  namePlaceholder: 'e.g. Zac Efron',
+  emailPlaceholder: 'e.g. zac@efron.com',
+  submitText: 'Sign up'
+};
+
+const Form = () => /*#__PURE__*/Object(jsx_runtime_["jsx"])(external_convertkit_react_default.a, _objectSpread({}, config));
+
+/* harmony default export */ var components_form = (Form);
+// CONCATENATED MODULE: ./pages/index.js
 
 
 
 
 
 const NOTION_BLOG_ID = '3672c8010da9404aa143b20ed50ab348';
-const BLOG_URL = process.env.BLOG_URL;
-const CONTENT_API_KEY = process.env.CONTENT_API_KEY; // export const getAllPosts = async () => {
-// 	return await fetch(
-//     `https://notion-api.splitbee.io/v1/table/${NOTION_BLOG_ID}`
-//   ).then((res) => res.json());
-// }
-
-async function getAllPosts() {
-  const res = await fetch(`${BLOG_URL}ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&fields=title,slug,excerpt,reading_time,published_at`).then(res => res.json());
-  return res.posts;
-}
+const getAllPosts = async () => {
+  return await fetch(`https://notion-api.splitbee.io/v1/table/${NOTION_BLOG_ID}`).then(res => res.json());
+};
 async function getStaticProps() {
   const allPostsData = await getAllPosts();
   return {
     props: {
-      allPostsData,
-      revalidate: 20
+      allPostsData
     }
   };
 }
-function Blog({
+function Home({
   allPostsData
 }) {
-  return /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])(_components_layout__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"], {
-    page: "blog",
-    children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("title", {
-        children: _components_layout__WEBPACK_IMPORTED_MODULE_4__[/* siteTitle */ "b"]
+  return /*#__PURE__*/Object(jsx_runtime_["jsxs"])(layout["a" /* default */], {
+    page: "home",
+    children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(head_default.a, {
+      children: /*#__PURE__*/Object(jsx_runtime_["jsx"])("title", {
+        children: layout["b" /* siteTitle */]
       })
-    }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("section", {
-      children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("div", {
-        className: "mb-16",
-        children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", {
-          className: "text-6xl font-semibold mb-4",
-          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
-            href: "https://www.tiktok.com/@mikeydata",
-            children: "MIKEYDATA"
-          })
-        }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-          className: "",
-          children: "sharing my learnings from my path into data science analytics..."
+    }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("section", {
+      children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("p", {
+        children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])("b", {
+          className: "font-medium",
+          children: ["currently product data at ", /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+            className: "hover:text-red-500",
+            href: "https://music.apple.com",
+            children: "\uF8FFMusic"
+          }), "& ", /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+            className: "hover:text-purple-500",
+            href: "https://podcasts.apple.com",
+            children: "\uF8FFPodcasts"
+          }), "."]
+        }), " fellow at ", /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+          className: "hover:text-yellow-400",
+          href: "https://goldhouse.org",
+          children: "gold house"
+        }), ". previously ", /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+          className: "hover:text-gray-400",
+          href: "https://www.bird.co",
+          children: "bird"
+        }), " and ", /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+          className: "hover:text-blue-500",
+          href: "https://jmi.com",
+          children: "jmi equity"
+        }), ". retired ", /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+          className: "hover:text-blue-300",
+          href: "https://www.swimcloud.com/swimmer/167857/",
+          children: "D1 swimmer"
+        }), " at Penn. lover of athletics, films, delightful products, and oatmeal."]
+      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("p", {
+        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("b", {
+          className: "font-medium",
+          children: "i'm working on a breaking into data science analytics course."
+        }), " sign up below to my email list to get updates and early access on all new content."]
+      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("div", {
+        className: "font-sans m-6",
+        children: /*#__PURE__*/Object(jsx_runtime_["jsx"])(components_form, {})
+      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("p", {
+        children: "questions? reach me at me@mikewen.co"
+      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("br", {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])("p", {
+        className: "mt-16 mb-8",
+        children: "~"
+      }), /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
+        className: "flex flex-row",
+        children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+          className: "flex-1 underline text-gray-400 hover:text-black",
+          href: "",
+          children: "insta"
+        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+          className: "flex-1 underline text-gray-400 hover:text-black",
+          href: "",
+          children: "twitter"
+        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+          className: "flex-1 underline text-gray-400 hover:text-black",
+          href: "",
+          children: "github"
+        }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("a", {
+          className: "flex-1 underline text-gray-400 hover:text-black",
+          href: "",
+          children: "linkedin"
         })]
-      }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("ul", {
-        children: allPostsData.map(post => /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("div", {
-          className: "p-10 mt-3 mb-12 border border-gray-100 hover:bg-gray-100",
-          children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxs"])("li", {
-            children: [/*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-              href: `/blog/${post.slug}`,
-              children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("a", {
-                className: "text-2xl font-medium text-gray-800",
-                children: post.title
-              })
-            }), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("br", {}), /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])("p", {
-              className: "mt-2 text-sm text-gray-400",
-              children: /*#__PURE__*/Object(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__["jsx"])(_components_date__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], {
-                dateString: post.published_at
-              })
-            })]
-          }, post.slug)
-        }))
       })]
     })]
   });
