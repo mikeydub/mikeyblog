@@ -1,16 +1,16 @@
 import Head from 'next/head'
+import Header from '../components/Header'
+import Page from '../components/Page'
+import PageHeader from '../components/PageHeader'
 import Layout, { siteTitle } from '../components/layout'
 
 export default function About() {
     return (
-        <Layout page='about'>
-            <Head>
-            <title>{siteTitle}</title>
-            </Head>
-            <section>
-            <h1 className='text-6xl font-semibold mb-16'>ABOUT</h1>
-            <p>loading...</p>
-            </section>
-        </Layout>
+        <Page>
+                <section>
+                <PageHeader title='ABOUT'/>
+                <p className='mt-6'>loading...</p>
+                </section>
+        </Page>
     )
 }

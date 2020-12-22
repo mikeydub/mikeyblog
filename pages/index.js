@@ -1,10 +1,7 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import Header from '../components/Header'
+import Page from '../components/Page'
 import PageHeader from '../components/PageHeader'
-import CenteredColumn from '../components/Layouts'
-import Footer from '../components/Footer'
-import Form from '../components/form'
+import SubscribeForm from '../components/SubscribeForm'
+import Form from '../components/SubscribeForm'
 
 const NOTION_BLOG_ID = '3672c8010da9404aa143b20ed50ab348'
 
@@ -25,8 +22,7 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
   return (
-    <CenteredColumn>
-        <Header />
+    <Page>
         <div className='mb-20'><PageHeader title="WHO'S MIKE WEN"></PageHeader></div>
         
         <section>
@@ -40,16 +36,13 @@ export default function Home({ allPostsData }) {
             <b className='font-medium'>i'm working on a breaking into data science analytics course.</b> sign up below to my email list to get updates and early access on all new content.
           </p>
           <br></br>
-          <div className='font-sans m-6'>
-            <Form/>
-          </div>
+          <SubscribeForm/>
           <br></br>
           <p>
             questions? reach me at me@mikewen.co
           </p>
           <br></br>
-          <Footer />
         </section>
-    </CenteredColumn>
+    </Page>
   )
 }

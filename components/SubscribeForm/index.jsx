@@ -11,8 +11,10 @@ const config = {
     submitText: 'Sign up',
 }
 
-const Form = () => (
-    <ConvertKitForm {...config} />
+const SubscribeForm = () => (
+    <div className='m-6'>
+        <ConvertKitForm {...config} />
+    </div>
 )
 
-export default Form;
+export default SubscribeForm;

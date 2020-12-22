@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Nav from './nav'
+import Nav from './Nav'
 
 const name = "WHO'S MIKE WEN?"
 export const siteTitle = 'Mike Wen'
