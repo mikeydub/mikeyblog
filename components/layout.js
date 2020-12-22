@@ -7,7 +7,7 @@ export const siteTitle = 'Mike Wen'
 
 export default function Layout({ children, page }) {
   return (
-    <div className='max-w-xl py-1 mt-3 mb-6 mx-auto'>
+    <div className='max-w-2xl py-1 mt-3 mb-6 mx-auto'>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -32,7 +32,7 @@ export default function Layout({ children, page }) {
         {/* splitbee */}
         <script async src="https://cdn.splitbee.io/sb.js"></script>
       </Head>
-      <Nav></Nav>
+      <Nav />
       <header className='flex flex-col'>
         {page === 'home' ? (
           (
@@ -46,7 +46,7 @@ export default function Layout({ children, page }) {
               <a>
               </a>
             </Link>
-            <h2 className='text-2xl font-semibold tracking-tight mt-8 mb-20 ml-1'>
+            <h2 className='text-lg font-medium tracking-tight mt-8 mb-20 ml-1'>
               <Link href="/">
                 <a>{name}</a>
               </Link>
