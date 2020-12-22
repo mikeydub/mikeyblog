@@ -6,9 +6,11 @@ export default function Page({ children }) {
     return (
       <>
         <CenteredColumn>
-          <Header />
-          <div className="px-4 lg:px-0">{children}</div>
-          <Footer />
+          <div className="px-4 lg:px-0">
+            <Header />
+            {children}
+            <Footer />
+          </div>
         </CenteredColumn>
       </>
     )

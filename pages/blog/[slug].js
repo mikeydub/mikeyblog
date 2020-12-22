@@ -41,7 +41,7 @@ export default function Post({ post }) {
   const router = useRouter()
 
   if (router.isFallback) {
-    return <h1 class>loading...</h1>
+    return <p class>loading...</p>
   }
   return (
     <Page>
