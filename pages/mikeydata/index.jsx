@@ -1,6 +1,7 @@
 import Page from '../../components/Page'
 import PageHeader from '../../components/PageHeader'
 import List from '../../components/List'
+import SubscribeForm from '../../components/SubscribeForm'
 
 const BLOG_URL = process.env.BLOG_URL
 const CONTENT_API_KEY = process.env.CONTENT_API_KEY
@@ -32,6 +33,8 @@ export default function Blog({ allPostsData }) {
                     <p className='text-lg'>
                         sharing my learnings from my path into data science analytics...
                     </p>
+                    <p className='my-12'></p>
+                    <SubscribeForm text='want to get updated when i share a new post? sign up here.'/>
                 </div>
                 {allPostsData && <List posts={allPostsData}/>}
                 </section>

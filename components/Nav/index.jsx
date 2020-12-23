@@ -13,7 +13,7 @@ export default function Nav() {
                     •
                 </div>
                 <div className="flex-none underline text-gray-400 hover:text-black">
-                    <Link href='/blog'>
+                    <Link href='/mikeydata'>
                         <a>mikeydata</a>
                     </Link>
                 </div>

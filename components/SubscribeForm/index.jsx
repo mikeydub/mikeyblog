@@ -11,8 +11,9 @@ const config = {
     submitText: 'Sign up',
 }
 
-const SubscribeForm = () => (
-    <div className='m-6'>
+const SubscribeForm = ({ text }) => (
+    <div className='mx-6 my-4'>
+        {text && <p className='italic mb-1'>{ text }</p>}
         <ConvertKitForm {...config} />
     </div>
 )
