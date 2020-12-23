@@ -28,8 +28,8 @@ export default function Blog({ allPostsData }) {
     return (
         <Page>
                 <section>
-                <div className='mt-6 lg:mt-28 mb-10'>
-                    <a href='https://www.tiktok.com/@mikeydata'><PageHeader title='MIKEYDATA' subtitle='sharing my learnings from my path into data science analytics...'/></a>
+                <div className='mt-16 lg:mt-28 mb-10'>
+                    <a href='https://www.tiktok.com/@mikeydata'><PageHeader title='MIKEY DATA' subtitle='sharing my learnings from my path into data science analytics...'/></a>
                     <p className='my-12'></p>
                     <SubscribeForm text='want to get updated when i share a new post? sign up here.'/>
                 </div>
