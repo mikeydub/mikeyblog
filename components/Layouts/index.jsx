@@ -5,3 +5,11 @@ export default function CenteredColumn({ children }) {
         </div>
     )
 }
+
+export function PostCenteredColumn({ children }) {
+    return (
+        <div className="flex flex-col max-w-screen-md mx-auto justify-content">
+            {children}
+        </div>
+    )
+}

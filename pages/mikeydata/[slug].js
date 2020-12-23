@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../../components/layout'
 import Page from '../../components/Page'
+import PostPage from '../../components/Page/postpage'
 import PostContainer from '../../components/PostContainer'
 import Date from '../../components/date'
 import Body from '../../components/body'
@@ -44,9 +45,9 @@ export default function Post({ post }) {
     return <p class>loading...</p>
   }
   return (
-    <Page>
+    <PostPage>
         <PostContainer post={ post } />
-    </Page>
+    </PostPage>
     );
 }
 
