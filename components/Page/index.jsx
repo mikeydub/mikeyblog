@@ -6,7 +6,7 @@ export default function Page({ children }) {
     return (
       <>
         <CenteredColumn>
-          <div className="px-4 lg:px-0">
+          <div className="px-6 lg:px-0">
             <Header />
             {children}
             <Footer />
