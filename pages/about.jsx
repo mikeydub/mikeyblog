@@ -8,7 +8,7 @@ export default function About() {
     return (
         <Page>
                 <section>
-                <div className="mt-28"><PageHeader title='ABOUT'/></div>
+                <div className="mt-16 lg:mt-28"><PageHeader title='ABOUT'/></div>
                 <p><b className='font-semibold'>currently product data at <a className='hover:text-red-500'href='https://music.apple.com'>Music</a> & <a className='hover:text-purple-500' href='https://podcasts.apple.com'>Podcasts</a>.
           </b> fellow at <a className='hover:text-yellow-400' href='https://goldhouse.org'>gold house</a>. 
           previously <a className='hover:text-gray-400' href='https://www.bird.co'>bird</a> and <a className='hover:text-blue-500' href='https://jmi.com'>
