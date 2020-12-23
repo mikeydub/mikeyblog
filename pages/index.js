@@ -22,7 +22,7 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   return (
     <Page>
-        <div className='mt-28 mb-10'><PageHeader title="WHO'S MIKE WEN?" subtitle='nobody...yet ;)'></PageHeader></div>
+        <div className='md:mt-28 mb-10'><PageHeader title="WHO'S MIKE WEN?" subtitle='nobody...yet ;)'></PageHeader></div>
         <ul className='list-inside list-disc leading-relaxed'>currently i am:
           <li className='ml-4'>driving <a className='hover:text-red-500'href='https://music.apple.com'>Music</a> & <a className='hover:text-purple-500' href='https://podcasts.apple.com'>Podcasts</a> forward thru analytics</li>
           <li className='ml-4'>fighting for asian american representation in media at <a className='hover:text-yellow-400' href='https://goldhouse.org'>gold house</a></li>
