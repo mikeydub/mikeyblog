@@ -36,7 +36,7 @@ export default function About() {
                     <br></br>
                     <p className='font-bold'>Q: what are some of your favorite stuff?</p>
                     <br></br>
-                    <p className=''>favorite movie is probaly call me by your name. this year? hmm. little women. i just love timmy chalamet. favorite director rn is taika waititi. favorite novel...pachinko. favorite biography is steve jobs book. favorite artist is frank ocean. favorite breakfast is overnight oats by a mile. idk why everyone doesn't eat overnight oats.</p>
+                    <p className=''>favorite movie is probaly call me by your name. this year? hmm. little women. i just love timmy chalamet. favorite director rn is taika waititi. favorite comedian -- nathan fielder 100%. favorite novel...pachinko. favorite biography is steve jobs book. favorite artist is frank ocean. favorite breakfast is overnight oats by a mile. idk why everyone doesn't eat overnight oats.</p>
                     <br></br>
                     <p className='font-bold'>Q: cool well thanks for your time.</p>
                     <br></br>
