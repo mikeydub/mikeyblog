@@ -40,7 +40,7 @@ export default function About() {
                     <br></br>
                     <p className='font-bold'>Q: cool well thanks for your time.</p>
                     <br></br>
-                    <p className=''>hey no prob, it was a real pleasure. if you have anything else, hit me up anytime at me(at)mikewen.co</p>
+                    <p className=''>hey no prob. it's always been a dream to be interviewed. if you have anything else, hit me up anytime at me(at)mikewen.co</p>
                     <br></br>
                 </div>
                 <p><b className='font-semibold'>currently product data at <a className='hover:text-red-500'href='https://music.apple.com'>Music</a> & <a className='hover:text-purple-500' href='https://podcasts.apple.com'>Podcasts</a>.
