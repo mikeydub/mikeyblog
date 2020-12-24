@@ -5,9 +5,9 @@ import { PostCenteredColumn }  from '../Layouts'
 export default function PostPage({ children }) {
     return (
       <>
+        <Header />
         <PostCenteredColumn>
           <div className="px-4 lg:px-0">
-            <Header />
             {children}
             <Footer />
           </div>

@@ -1,12 +1,6 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../../components/layout'
-import Page from '../../components/Page'
 import PostPage from '../../components/Page/postpage'
 import PostContainer from '../../components/PostContainer'
-import Date from '../../components/date'
-import Body from '../../components/body'
 import { useRouter } from 'next/router'
-import PageHeader from '../../components/PageHeader'
 
 const BLOG_URL = process.env.BLOG_URL
 const CONTENT_API_KEY = process.env.CONTENT_API_KEY
