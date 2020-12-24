@@ -26,6 +26,7 @@ export default function Home({ allPostsData }) {
         <ul className='list-inside list-disc leading-relaxed'>currently i am:
           <li className='mt-2 ml-4'>based in la</li>
           <li className='ml-4'>driving Music & Podcasts forward with data</li>
+          <li className='ml-4'>pushing for asian american representation in media at gold house</li>
           <li className='ml-4'>collecting and flipping digital art</li>
           <li className='ml-4'>sharing my love of <a className='hover:text-yellow-600 hover:text-opacity-25' href='https://www.tiktok.com/@mikeyoatmeal'>overnight oats</a> with the world</li>
         </ul>
