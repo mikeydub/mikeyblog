@@ -16,7 +16,7 @@ export default function About() {
                     <br></br>
                     <p className='font-bold'>Q: what school did you go to?</p>
                     <br></br>
-                    <p className=''>i went to penn and studied finance and comp sci. i swam four years on the varsity team.</p>
+                    <p className=''>i went to penn and studied finance and comp sci. i swam d1 all four years on the varsity team.</p>
                     <br></br>
                     <p className='font-bold'>Q: what are you working on outside of work?</p>
                     <br></br>
