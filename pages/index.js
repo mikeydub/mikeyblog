@@ -25,7 +25,7 @@ export default function Home({ allPostsData }) {
         <div className='mt-16 lg:mt-28 mb-10'><PageHeader title="WHO'S MIKE WEN?" subtitle='nobody........yet ;)'></PageHeader></div>
         <ul className='list-inside list-disc leading-relaxed'>currently i am:
           <li className='mt-2 ml-4'>based in la</li>
-          <li className='ml-4'>driving <a className='hover:text-red-500'href='https://music.apple.com'>Music</a> & <a className='hover:text-purple-500' href='https://podcasts.apple.com'>Podcasts</a> forward with data</li>
+          <li className='ml-4'>driving Music & Podcasts forward with data</li>
           <li className='ml-4'>collecting and flipping digital art</li>
           <li className='ml-4'>sharing my love of <a className='hover:text-yellow-600 hover:text-opacity-25' href='https://www.tiktok.com/@mikeyoatmeal'>overnight oats</a> with the world</li>
         </ul>
