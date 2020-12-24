@@ -10,7 +10,7 @@ export default function Nav() {
                     </Link>
                 </div>
                 <div className='text-gray-500'>
-                    •
+                    /
                 </div>
                 <div className="flex-none underline text-gray-400 hover:text-black">
                     <Link href='/mikeydata'>
@@ -18,7 +18,7 @@ export default function Nav() {
                     </Link>
                 </div>
                 <div className='text-gray-500'>
-                    •
+                    /
                 </div>
                 {/* <div className="flex-none underline text-gray-400 hover:text-black">
                         <Link href='/thoughts'>
