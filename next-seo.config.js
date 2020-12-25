@@ -6,7 +6,14 @@ export default {
       site_name: 'Mike Wen',
       title: "Mike Wen's home on the internet",
       description: 'How to break into data science analytics',
-      image:'/images/preview_image.png',
+      images:[
+        {
+          url: '/images/preview_image.png',
+          width: 800,
+          height: 600,
+          alt: "WHO'S MIKE WEN"
+        }
+      ],
       profile: {
         firstName: 'Mike',
         lastName: 'Wen',
