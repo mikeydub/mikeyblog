@@ -21,7 +21,7 @@ export default function About() {
                     <br></br>
                     <p className='font-bold'>Q: ok..anything else?</p>
                     <br></br>
-                    <p className=''>oh yea i also co-founded and growing the west coast penn swimming and diving alumni group. and my goal is to learn how to build so making side projects when i can.</p>
+                    <p className=''>oh yea i also co-founded and am growing the west coast penn swimming and diving alumni group. and my goal is to learn to build so working on side projects when i can.</p>
                     <br></br>
                     <p className='font-bold'>Q: alright. what do you like to do for fun?</p>
                     <br></br>
