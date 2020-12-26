@@ -4,11 +4,11 @@ export default {
       locale: 'en_US',
       url: 'https://www.mikewen.co/',
       site_name: 'Mike Wen',
-      title: "Mike Wen's home on the internet",
-      description: 'How to break into data science analytics',
+      title: "Hey, I'm Mike and share my thoughts on breakign into data science, NFTs, and anything else I'm interested in.",
+      description: "I write about product data science, NFTs, digital art, and more.",
       images:[
         {
-          url: '/images/preview_image.png',
+          url: 'https://www.mikewen.co/images/preview_image.png',
           width: 800,
           height: 600,
           alt: "WHO'S MIKE WEN"

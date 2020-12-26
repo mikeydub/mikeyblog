@@ -1,6 +1,7 @@
 import PostPage from '../../components/Page/postpage'
 import PostContainer from '../../components/PostContainer'
 import { useRouter } from 'next/router'
+import { NextSeo } from 'next-seo'
 
 const BLOG_URL = process.env.BLOG_URL
 const CONTENT_API_KEY = process.env.CONTENT_API_KEY
@@ -38,8 +39,25 @@ export default function Post({ post }) {
   if (router.isFallback) {
     return <p class>loading...</p>
   }
+  
   return (
     <PostPage>
+        <NextSeo 
+          openGraph={{
+            title: post.og_title,
+            description: post.og_description,
+            images: [{
+              url: post.og_image
+            },
+            ],
+            site_name: 'MIKE WEN'
+          }}
+          twitter={{
+            handle: '@mikeybitcoin',
+            site: '@mikeybitcoin',
+            cardType: 'summary_large_image'
+          }}
+        />
         <PostContainer post={ post } />
     </PostPage>
     );
