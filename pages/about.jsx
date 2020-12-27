@@ -5,7 +5,7 @@ export default function About() {
     return (
         <Page>
                 <section>
-                <div className="mt-16 lg:mt-28 mb-12"><PageHeader title='ABOUT' subtitle='interview with myself // december 23, 2020.'/></div>
+                <div className="mt-16 lg:mt-28 mb-12"><PageHeader title='ABOUT' subtitle='interview with myself // december 23, 2020'/></div>
                 <div className='mt-16'>
                     <p className='font-bold'>Q: what do you do for work?</p>
                     <br></br>
