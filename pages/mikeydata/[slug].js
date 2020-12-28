@@ -10,7 +10,7 @@ export async function getPosts(slug) {
   const res = await fetch(
       `${BLOG_URL}ghost/api/v3/content/posts/slug/${slug}?key=${CONTENT_API_KEY}`
       ).then((res) => res.json())
-  console.log(res.posts[0])
+
   return res.posts[0]
 }
 
@@ -44,8 +44,8 @@ export default function Post({ post }) {
     <PostPage>
         <NextSeo 
           openGraph={{
-            title: post.og_title,
-            description: post.og_description,
+            title: post.meta_title,
+            description: post.meta_description,
             images: [{
               url: post.og_image
             },

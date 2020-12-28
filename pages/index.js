@@ -34,7 +34,7 @@ export default function Home({ allPostsData }) {
         <Link href='/about'><a className="flex-none underline text-gray-400 hover:text-black">more about me...</a></Link>
         <br></br>
         <br></br>
-        <p>questions? reach me at me(at)mikewen.co</p>
+        <p>questions? reach me at me@mikewen.co</p>
     </Page>
   )
 }

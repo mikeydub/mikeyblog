@@ -11,10 +11,10 @@ export default function PostContainer({ post }) {
                     <Link href="/mikeydata">
                         <a className='underline text-gray-400 hover:text-black'>back to all posts</a>
                     </Link>
-                    <div className='mt-6'><PageHeader title={post.title} subtitle={post.excerpt}/></div>
+                    <div className='mt-6'><PageHeader title={post.title}/></div>
                 </div>
-            <p className='mt-2 text-gray-400'>
-            <Date dateString={post.updated_at}/> 
+            <p className='mt-2 text-gray-400 font-mono'>
+            <pre><Date dateString={post.updated_at}/>  ·  {post.reading_time} MIN READ</pre>
             </p>
             </div>
             <article className='prose font-prose lg:prose-xl'>
