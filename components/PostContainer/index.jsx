@@ -13,19 +13,21 @@ export default function PostContainer({ post }) {
                     </Link>
                     <div className='mt-6'><PageHeader title={post.title}/></div>
                 </div>
-            <p className='mt-2 text-gray-400 font-mono'>
-            <pre><Date dateString={post.updated_at}/>  ·  {post.reading_time} MIN READ</pre>
-            </p>
+                <p className='mt-2 text-gray-400 font-mono'>
+                    <pre><Date dateString={post.updated_at}/>  ·  {post.reading_time} MIN READ</pre>
+                </p>
             </div>
-            <article className='prose font-prose lg:prose-xl'>
-            <div dangerouslySetInnerHTML={{ __html: post.html}}></div>
-            </article>
+            <div className=''>
+                <article className='prose font-prose md:prose-lg'>
+                    <div dangerouslySetInnerHTML={{ __html: post.html}}></div>
+                </article>
+            </div>
             <div className="mt-24">
                 <SubscribeForm text='want more? subscribe to my newsletter for everything i used to break into data science.'/>
             </div>
             <Link href="/mikeydata">
                 <a className='underline text-gray-400 hover:text-black'>see all posts</a>
-          </Link>
+            </Link>
         </>
     )
 }
