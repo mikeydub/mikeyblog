@@ -30,7 +30,7 @@ export default function Blog({ allPostsData }) {
                 <section>
                 <div className='mt-16 lg:mt-28 mb-10'>
                     <a href='https://www.tiktok.com/@mikeydata'><PageHeader title='MIKEY DATA' subtitle='sharing my learnings from my path into data science analytics...'/></a>
-                    <p className='my-12'></p>
+                    <div className='flex mx-auto my-12 underline text-purple-500 hover:text-black'><a href='https://discord.gg/CcPez9c6Jr'>join my discord!</a></div>
                     <SubscribeForm text='want to get updated when i share a new post? sign up here.'/>
                 </div>
                 {allPostsData && <List posts={allPostsData}/>}
