@@ -18,7 +18,7 @@ export default function PostContainer({ post }) {
                 </p>
             </div>
             <div className=''>
-                <article className='prose font-prose md:prose-lg'>
+                <article className='prose font-prose max-w-none'>
                     <div dangerouslySetInnerHTML={{ __html: post.html}}></div>
                 </article>
             </div>
