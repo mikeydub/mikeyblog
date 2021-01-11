@@ -29,7 +29,7 @@ export default function About() {
                     <br></br>
                     <p className='font-bold'>Q: what are you most proud of this year?</p>
                     <br></br>
-                    <p className=''>my mustache. i never in my life did i think i could do it. but here i am and it's moderately respectable! goes to show you should never settle on your dreams.</p>
+                    <p className=''>my mustache. i never in my life did i think i could do it. but here i am and it's moderately respectable! goes to show you should never settle on your dreams. also ate an avacado every day for 145 days to start the year.</p>
                     <br></br>
                     <p className='font-bold'>Q: what are some of your favorite stuff?</p>
                     <br></br>
