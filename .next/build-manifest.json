@@ -29,10 +29,15 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
-    "/mikeydata/[slug]": [
+    "/about": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/mikeydata/[slug].js"
+      "static/chunks/pages/about.js"
+    ],
+    "/mikeydata": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/mikeydata.js"
     ]
   },
   "ampFirstPages": []
