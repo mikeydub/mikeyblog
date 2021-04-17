@@ -12,14 +12,14 @@ export default function Nav() {
                 <div className='text-gray-500'>
                     /
                 </div>
-                <div className="flex-none underline text-gray-400 hover:text-black">
+                {/* <div className="flex-none underline text-gray-400 hover:text-black">
                     <Link href='/mikeydata'>
                         <a>mikeydata</a>
                     </Link>
                 </div>
                 <div className='text-gray-500'>
                     /
-                </div>
+                </div> */}
                 {/* <div className="flex-none underline text-gray-400 hover:text-black">
                         <Link href='/thoughts'>
                             <a>thoughts</a>

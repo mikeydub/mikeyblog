@@ -6,6 +6,13 @@ export default function About() {
         <Page>
                 <section>
                 <div className="mt-16 lg:mt-28 mb-12"><PageHeader title='ABOUT' subtitle='in progress...'/></div>
+                <ul className='list-inside list-disc leading-relaxed'>previously
+                    <li className='ml-4'>invested in software companies at JMI Equity</li>
+                    <li className='ml-4'>experimented with a novel models of transportation at Bird</li>
+                    <li className='ml-4'>swam 4 years at Penn</li>
+                </ul>
+
+
                 {/* <div className='mt-16'>
                     <p className='font-bold'>Q: what do you do for work?</p>
                     <br></br>
@@ -25,8 +32,11 @@ export default function About() {
                     <br></br>
                 </div> */}
 
-                <div className='mt-16'>
-                  just dm me on twitter :) 
+                <div className='mt-8 mb-24'>
+                  will add more to look at here at some point.
+                  <br></br>
+                  <br></br>
+                  in the meantime, if you want to chat just dm me on twitter :) 
                 </div>
           <br></br>
                 </section>
