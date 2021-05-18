@@ -5,14 +5,13 @@ export default function About() {
     return (
         <Page>
                 <section>
-                <div className="mt-16 lg:mt-28 mb-12"><PageHeader title='ABOUT' subtitle='in progress...'/></div>
+                {/* <div className="mt-16 lg:mt-28 mb-12"><PageHeader title='ABOUT' subtitle='in progress...'/></div> */}
+                <div className="mt-16 lg:mt-28 mb-12"><PageHeader title='ABOUT' /></div>
                 <ul className='list-inside list-disc leading-relaxed'>previously
                     <li className='ml-4'>invested in software companies at JMI Equity</li>
                     <li className='ml-4'>experimented with a novel models of transportation at Bird</li>
                     <li className='ml-4'>swam 4 years at Penn</li>
                 </ul>
-
-
                 {/* <div className='mt-16'>
                     <p className='font-bold'>Q: what do you do for work?</p>
                     <br></br>
