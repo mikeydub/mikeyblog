@@ -7,7 +7,7 @@ export default function Header() {
     return (
         <div>
             <Head>
-            <link rel="icon" href="/mwfavicon.png" />
+            <link rel="icon" href="/mwfavicon.ico" />
             <meta
             name="description"
             content="Mike Wen's home on the internet."
