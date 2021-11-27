@@ -1,7 +1,15 @@
 @font-face {
-  font-family: "Heebo";
-  font-display: swap;
-  src: url("/fonts/Heebo/Heebo-VariableFont_wght.ttf")
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue.otf") format("opentype"),
+    url("/fonts/HelveticaNeue.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("/fonts/HelveticaNeue-Medium.otf") format("opentype"),
+    url("/fonts/HelveticaNeue-Medium.ttf") format("truetype");
+  font-weight: 500;
 }
 
 @tailwind base;
